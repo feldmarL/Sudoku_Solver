@@ -29,8 +29,7 @@ def print_sudoku():
         for j in range(9):
             if (j == 3 or j == 6):
                 print('|  ', end="")
-            print(grid[i][j], end="")
-            print('  ', end="")
+            print(f"{grid[i][j]}  ", end="")
             if (j == 8):
                 print('\n')
 
@@ -46,6 +45,6 @@ def solve():
                             grid[i][j] = 0
                     return
     print_sudoku()
-    input("D'autres ?")
+    input("More ?")
     
 solve()
